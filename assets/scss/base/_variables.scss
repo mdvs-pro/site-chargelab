@@ -6,8 +6,8 @@ $bgcolor:                   #ffffff;
 $color_white:               #ffffff;
 $color_gray:                #dcdcdc;
 $primary_color:             #3f4147;
-$secondary_color:           #a70c5d;
-$secondary_color_darker:    #9f2865;
+$secondary_color:           #59b33b;
+$secondary_color_darken:    darken( #59b33b, 20%);
 $light_color:               #9a9a9a;
 $dark_color:                #454545;
 $border_color:              #f4f4f4;
@@ -15,7 +15,7 @@ $border_color:              #f4f4f4;
 
 // Fonts
 
-$primary_font: 'Calibre', sans-serif;
+$primary_font: 'Roboto', sans-serif;
 $secondary_font: '';
 
 $font-size-base:            10px;
@@ -91,12 +91,11 @@ $grid-breakpoints: (
 //  Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
-        sm: 540px,
-        md: 720px,
-        lg: 960px,
+        sm: 95%,
         xl: 1140px
 ) !default;
-@include _assert-ascending($container-max-widths, "$container-max-widths");
+// we don't need _asc order if have % and px in one stack
+//@include _assert-ascending($container-max-widths, "$container-max-widths");
 
 
 // Grid columns

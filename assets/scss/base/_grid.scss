@@ -17,7 +17,20 @@
 
 .row {
   @include make-row();
+
+  &--a-c {
+    align-items: center;
+  }
+
+  &--j-sa {
+    justify-content: space-around
+  }
+
+  &--j-sb {
+    justify-content: space-between
+  }
 }
+
 
 // Remove the negative margin from default .row, then the horizontal padding
 // from all immediate children columns (to prevent runaway style inheritance).

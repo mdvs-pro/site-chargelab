@@ -1,3 +1,63 @@
 .header {
+  background: #f7f7f7;
+  padding: 1rem 0;
+  font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
 
+  &__link {
+    color: $primary_color;
+  } 
+
+  &__burger {
+    display: none;
+
+    @include media-breakpoint-down(md) {
+      display: block;
+    }
+  }
+
+  &__nav {
+    display: block;
+    flex: 1;
+    
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+
+  &__menu {
+    @extend .row;
+    @extend .no-gutters;
+    justify-content: space-between;
+  }
+
+  &__tel {
+    margin: 0 1rem;
+  }
+}
+
+.logo {
+	width: 20rem;
+
+	&__img {
+		display: block;
+	}
+}
+
+.menu {
+  margin-left: 5rem;
+  margin-right: 5rem;
+
+  &__item {
+    padding-left: 0;
+  }
+}
+
+.social {
+
+  &__item {
+    font-size: 2.6rem;
+    @extend .menu__item;
+  }
 }

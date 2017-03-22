@@ -1,0 +1,41 @@
+/*!
+ * -------------------------------------
+ * Theme Name: wp-gulp-starter-kit
+ * Theme URI: https://github.com/yuchiko/wp-gulp-starter-kit
+ * Author: Yuriy Byts
+ * Author URI: https://github.com/yuchiko/
+ * Description: Custom wp theme starter kit
+ * Version: 1.0
+ * -------------------------------------
+ */
+
+
+// Base Style
+@import "base/_mixin";
+@import "base/_fonts";
+@import "base/_variables";
+@import "base/_extend";
+@import "base/_function";
+@import "base/_sprite";
+@import "base/_reset";
+@import "base/_bootstrap-grid"; // bootstrap v4 grid
+
+
+//	Style
+@import "_some";			// стили основные-всякие
+@import "_btnsIcons";	    // кнопки, иконки
+@import "_header";		    // стили шапки
+@import "_footer";		    // стили футера
+@import "_sidebar";		    // стили виджетов сайдбара
+@import "_excerpt";			// post excerpts
+@import "_post";            // стили поста
+@import "_libs";            // стили библиотек/плагинов
+
+@import "partials/_mobile-nav";
+
+@import "_adaptive";			// стили адаптивки
+
+
+
+
+

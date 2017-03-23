@@ -14,18 +14,16 @@ body {
 
 h2, .h2 {
 	font-weight: 600;
-	font-size: 3rem;
-	line-height: 3.5rem;
-	color: $dark_color;
-	text-transform: uppercase;
+	font-size: 4rem;
+	line-height: 1.2;
+	color: $secondary_color;
 }
 
 h3, .h3 {
 	font-weight: 600;
-	font-size: 2.8rem;
-	line-height: 3rem;
+	font-size: 3.5rem;
+	line-height: 1.2;
 	color: $primary_color;
-	text-transform: uppercase;
 }
 
 h4, .h4 {
@@ -101,6 +99,17 @@ ul {
 	text-align: center;
 }
 
+.sc {
+	padding-top: 4rem;
+	padding-bottom: 2rem;
+
+	&__heading {
+		font-size: 4rem;
+		text-align: center;
+		padding: 2rem 0 6rem;
+	}
+}
+
 .form {
 
 	&--flex {
@@ -117,4 +126,14 @@ ul {
 	background-color: $color_white;
 	border-radius: .3rem;
 	padding: 1rem;
+}
+
+.flex-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	&--4 > &__item{
+		flex: 0 0 25%;
+	}
 }

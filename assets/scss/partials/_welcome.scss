@@ -1,0 +1,55 @@
+.welcome {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  min-height: 60rem;
+  background: url('/assets/img/welcome.jpg') no-repeat center center;
+  padding-top: 9rem; // header height
+  background-size: cover;
+  align-items: center;
+  text-align: center;
+
+  &__heading {
+    font-size: 4rem;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    color: $secondary_color;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+
+    @include media-breakpoint-down(md) {
+      font-size: 2.6rem;
+    } 
+  }
+
+  &__form {
+
+    @include media-breakpoint-down(md) {
+      flex-wrap: wrap;
+    }
+
+    input {
+
+      @include media-breakpoint-down(md) {
+        width: 90%;
+        margin: 1rem 0;
+      } 
+    }
+  }
+
+  &__form-box {
+    padding-top: 2rem;
+  }
+
+  &__p {
+    font-size: 2.2rem;
+    color: $color_white;
+  }
+
+  &__input {
+    padding: 1.4rem 1rem;
+    margin-right: 2rem;
+    width: 40%;
+  }
+}

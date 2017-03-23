@@ -29,17 +29,19 @@
 				</ul>
 			</nav>
 
-			<div class="header__tel header__item">
-				<a href="tel:+380442280960" class="header__link">+38 (044) 228 09 60</a>
-			</div>
+			<div class="header__meta">
+				<div class="header__tel header__item">
+					<a href="tel:+380442280960" class="header__link">+38 (044) 228 09 60</a>
+				</div>
 
-			<ul class="social">
-				<li class="social__item">
-					<a href="https://www.facebook.com/ChargeLab-380238082347180/" class="header__link" target="_blank">
-						<i class="ch-icon ch-icon-facebook-circled" aria-hidden="true"></i>
-					</a>
-				</li>
-			</ul>
+				<ul class="social">
+					<li class="social__item">
+						<a href="https://www.facebook.com/ChargeLab-380238082347180/" class="header__link" target="_blank">
+							<i class="ch-icon ch-icon-facebook-circled" aria-hidden="true"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
 
 			<button class="burger header__burger">
 				<span></span>
@@ -62,18 +64,19 @@
 </div>
 
 <main id="main" role="main">
-
-    <div class="entry-content">
-        <div class="container">
-            <div class="row">
-                <div class="col">col</div>
-                <div class="col">col</div>
-                <div class="col">col</div>
-                <div class="col">col</div>
-            </div>
+    <section class="sc sc--welcome welcome">
+      <div class="sc__overlay"></div>
+      <div class="container">
+        <h1 class="welcome__heading">Зарядные станции для мобильных телефонов, в HoReCa и другие заведения</h1>
+        <div class="welcome__form-box">
+          <p class="welcome__p">Если Вам интересно узнать больше, оставьте заявку</p>
+          <form class="form form--flex welcome__form" action="action-order.php" method="POST">
+            <input class="input welcome__input input--big" type="text" name="client-email" placeholder="Ваш E-mail">
+            <input class="btn" type="submit" value="Отправить заявку">
+          </form>
         </div>
-    </div>
-
+      </div>
+    </section>
 </main>
 
 <footer id="footer" class="footer">

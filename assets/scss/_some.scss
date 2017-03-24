@@ -12,6 +12,10 @@ body {
 	color: $primary_color;
 }
 
+#main {
+	overflow: hidden;
+}
+
 h2, .h2 {
 	font-weight: 600;
 	font-size: 4.5rem;
@@ -107,6 +111,10 @@ ul {
 	&__heading {
 		text-align: center;
 		padding: 2rem 0 6rem;
+
+		&--cprimary {
+			color: $primary_color;
+		}
 	}
 
 	&__block-c {
@@ -139,6 +147,34 @@ ul {
 
 	&--4 > &__item{
 		flex: 0 0 25%;
+
+		@include media-breakpoint-down(md) {
+      flex: 0 0 50%;
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex: 0 0 100%;
+    }
+	}
+
+	&--3 > &__item{
+		flex: 0 0 33.3%;
+
+		@include media-breakpoint-down(md) {
+      flex: 0 0 50%;
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex: 0 0 100%;
+    }
+	}
+
+	&--2 > &__item{
+		flex: 0 0 50%;
+
+    @include media-breakpoint-down(sm) {
+      flex: 0 0 100%;
+    }
 	}
 
 	&__item {
@@ -147,4 +183,42 @@ ul {
     padding: 2rem 0 2rem;
     margin-top: 3rem;
 	}
+
+	&--left &__item {
+		text-align: left;
+	}
+}
+
+.num {
+	position: relative;
+	color: $color_white;
+	margin: 2rem 4rem;
+	font-size: 0.8em;
+	display: inline-block;
+
+	&:before {
+		content: '';
+    display: inline-block;
+    position: absolute;
+    background: $primary_color;
+    width: 6rem;
+    height: 6rem;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 50%;
+	}
+
+	&--scolor {
+		color: $primary_color;
+
+		&:before {
+			background: $secondary_color;
+		}
+	}
+}
+
+.history-list {
+
 }

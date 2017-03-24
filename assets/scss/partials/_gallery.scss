@@ -1,0 +1,36 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  padding: 0;
+
+  &__item {
+    background: $color_white;
+    position: relative;
+    flex: 0 0 25%;
+    height: 25rem;
+    z-index: 1;
+    transition: all .3s;
+
+    @include media-breakpoint-down(md) {
+      flex: 0 0 50%;
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex: 0 0 100%;
+    }
+
+    &:hover {
+      position: relative;
+      z-index: 2;
+      transform: scale(1.04);
+      box-shadow: 0 2px 20px 2px rgba(0,0,0,.45);
+    }
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}

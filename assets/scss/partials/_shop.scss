@@ -10,6 +10,14 @@
     flex: 0 0 33.3%;
     padding: 3rem 3.2rem;
     font-size: 2rem;
+    
+    @include media-breakpoint-down(md) {
+      flex: 0 0 50%;
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex: 0 0 100%;
+    }
   }
 }
 
@@ -24,10 +32,13 @@
 
   &__img {
 
+    height: 30rem;
+
     img {
       display: block;
-      max-width: 100%;
-      height: auto;
+      width: auto;
+      height: 100%;
+      margin: 0 auto;
     }
   }
 

@@ -1,0 +1,13 @@
+.faq {
+
+  &__flex-list {
+    
+    .flex-list__item {
+      padding-right: 2rem;
+
+      @include media-breakpoint-down(sm) {
+        padding-right: 0;
+      }
+    }
+  }
+}

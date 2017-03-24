@@ -1,0 +1,13 @@
+.contacts {
+  background: $light_color;
+
+  &__div {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__div > div {
+    text-align: center;
+    padding: 0 4rem;
+  }
+}

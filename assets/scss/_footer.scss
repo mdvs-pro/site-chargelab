@@ -1,3 +1,9 @@
 .footer {
+  background: $primary_color;
+  color: $color_white;
+  padding: 2rem 0;
 
+  p {
+    margin-bottom: 0;
+  }
 }

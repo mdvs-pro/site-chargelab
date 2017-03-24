@@ -1,11 +1,10 @@
 /*!
  * -------------------------------------
- * Theme Name: wp-gulp-starter-kit
- * Theme URI: https://github.com/yuchiko/wp-gulp-starter-kit
- * Author: Yuriy Byts
- * Author URI: https://github.com/yuchiko/
- * Description: Custom wp theme starter kit
- * Version: 1.0
+ * Theme Name: chargelab
+ * Author: yuchi.mdvs
+ * Author URI: mdvs.pro
+ * Description: Chargelab landing
+ * Version: 0.0.1
  * -------------------------------------
  */
 
@@ -37,6 +36,12 @@
 @import "partials/_about";
 @import "partials/_why";
 @import "partials/_shop";
+@import "partials/_profit";
+@import "partials/_employment";
+@import "partials/_demo";
+@import "partials/_gallery";
+@import "partials/_faq";
+@import "partials/_contacts";
 
 @import "_adaptive";			// стили адаптивки
 

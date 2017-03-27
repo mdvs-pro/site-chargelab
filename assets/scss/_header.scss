@@ -38,6 +38,16 @@
     margin-left: auto;
     margin-right: 2rem;
   }
+
+  @include media-breakpoint-down(xs) {
+    width: 100%;
+    order: 2;
+    justify-content: center;
+    margin-right: 0;
+    padding-top: 0rem;
+    border-top: 1px solid;
+    margin-top: 1rem;
+  }
 }
 
   &__menu {
@@ -53,6 +63,10 @@
 
 .logo {
 	width: 20rem;
+
+  @include media-breakpoint-down(xs) {
+    width: 14rem;
+  }
 
 	&__img {
 		display: block;

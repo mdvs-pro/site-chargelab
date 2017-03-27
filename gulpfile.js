@@ -4,7 +4,9 @@ var gulp = require('gulp'),
 	autoprefixer = require('gulp-autoprefixer'),
 	rename = require('gulp-rename'),
 	sourcemaps = require('gulp-sourcemaps'),
-	rigger = require('gulp-rigger');
+	rigger = require('gulp-rigger'),
+	concat = require('gulp-concat'),
+	jsmin = require('gulp-jsmin');
 
 
 // ... variables
@@ -21,6 +23,13 @@ gulp.task('html', function () {
 		.pipe(browserSync.reload({stream:true}));
 });
 
+gulp.task('js-vendor', function () {
+	return gulp.src('./assets/js/vendor/*.js')
+		.pipe(concat('vendor.min.js'))
+		.pipe(jsmin())
+		.pipe(gulp.dest('./assets/js/'))
+		.pipe(browserSync.reload({stream:true}));
+});
 
 gulp.task('css', function () {
 	return gulp.src('./assets/scss/**/*.scss')

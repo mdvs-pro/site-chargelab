@@ -4,14 +4,11 @@
   height: 100vh;
   min-height: 60rem;
   background: url('/assets/img/welcome-bg.jpg') no-repeat center center;
-  padding-top: 9rem; // header height
   background-size: cover;
   align-items: center;
   text-align: center;
-
-  @include media-breakpoint-down(xs) {
-    padding-top: 14rem;
-  }
+  
+  @extend %after-heading-block;
 
   &__heading {
     font-size: 4rem;

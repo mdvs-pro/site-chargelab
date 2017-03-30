@@ -20,6 +20,10 @@ body {
 	overflow: hidden;
 }
 
+.page #main {
+	@extend %after-heading-block;
+}
+
 h2, .h2 {
 	font-weight: 600;
 	font-size: 4.5rem;

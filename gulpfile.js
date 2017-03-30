@@ -17,7 +17,7 @@ var autoprefixerOptions = {
 var output = './';
 
 gulp.task('html', function () {
-	return gulp.src('./src/index.html')
+	return gulp.src('./src/*.html')
 		.pipe(rigger())
 		.pipe(gulp.dest(output))
 		.pipe(browserSync.reload({stream:true}));

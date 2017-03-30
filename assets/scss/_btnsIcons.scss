@@ -9,6 +9,7 @@
 	padding: 1rem 5.4rem;
 	border-radius: 9.39rem;
 	box-shadow: inset 0 0 0 0.1rem $secondary_color;
+	appearance: none;
 	@include animation(box-shadow, background, color);
 
 

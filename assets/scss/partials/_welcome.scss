@@ -10,7 +10,7 @@
   text-align: center;
 
   @include media-breakpoint-down(xs) {
-    padding-top: 12rem;
+    padding-top: 14rem;
   }
 
   &__heading {
@@ -25,6 +25,10 @@
     @include media-breakpoint-down(md) {
       font-size: 2.6rem;
     } 
+
+    @include media-breakpoint-down(xs) {
+      padding-top: 4rem;
+    }
   }
 
   &__form {

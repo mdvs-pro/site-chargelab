@@ -238,4 +238,9 @@
         "left-of-fold"   : function(a) { return !$.rightoffold(a, {threshold : 0}); }
     });
 
+    // lazyload init
+    $("img.lazy").lazyload({
+        effect : "fadeIn"
+    });
+
 })(jQuery, window, document);

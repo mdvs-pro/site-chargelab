@@ -1,82 +1,161 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="ru">
     <meta charset="UTF-8">
-    <title>Wordpress Starter Kit</title>
+    <title>ChargeLab - Product Page</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="page product">
 
-<header id="header" class="header">
-	<div class="container">
-		<div class="row no-gutters row--j-sb row--a-c">
-			<a href="/" class="header__logo logo">
-				<img src="/assets/img/logo.png" class="logo__img" alt="logo">
-			</a>
+    <header id="header" class="header">
+    	<div class="container">
+    		<div class="row no-gutters row--j-sb row--a-c">
+    			<a href="/" class="header__logo logo">
+    				<img src="/assets/img/logo.png" class="logo__img" alt="logo">
+    			</a>
+    
+    			<nav class="header__nav" role="navigation">
+    				<ul class="header__menu menu">
+    					<li class="menu__item"><a class="header__link menu__link page-scroll" href="#describe">Что это такое</a></li>
+    					<li class="menu__item"><a class="header__link menu__link page-scroll" href="#shop">Продукты</a></li>
+    					<li class="menu__item"><a class="header__link menu__link page-scroll" href="#profit">Выгоды</a></li>
+    					<li class="menu__item"><a class="header__link menu__link page-scroll" href="#employment">Как работает</a></li>
+    					<li class="menu__item"><a class="header__link menu__link page-scroll" href="#faq">FAQ</a></li>
+    					<li class="menu__item"><a class="header__link menu__link" href="/franchise.html">Франшиза</a></li>
+    				</ul>
+    			</nav>
+    
+    			<div class="header__meta">
+    				<div class="header__tel header__item">
+    					<a href="tel:+380442280960" class="header__link">+38 (044) 228 09 60</a>
+    				</div>
+    
+    				<ul class="social">
+    					<li class="social__item">
+    						<a href="https://www.facebook.com/ChargeLab-380238082347180/" class="header__link" target="_blank">
+    							<i class="ch-icon ch-icon-facebook-circled" aria-hidden="true"></i>
+    						</a>
+    					</li>
+    				</ul>
+    			</div>
+    
+    			<button class="burger header__burger">
+    				<span></span>
+    				<span></span>
+    				<span></span>
+    			</button>
+    		</div>
+    	</div>
+    </header>
+    <div class="mobile-nav js_mobile-nav">
+        <nav>
+            <ul class="mobile-nav__menu">
+            </ul>
+        </nav>
+        <button class="burger mobile-nav__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    
+    <main id="main" role="main">
+        <section class="sc sc--product">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 breadcrumbs">
+                        <span><a href="/">Главная</a></span>
+                        <span>&gt;</span>
+                        <span>ChargeLab ALFA</span>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="product__slider">
+                            <div class="product__slide">
+                                <img class='lazyOwl' data-src="/assets/img/products/Alphaf5.jpg" alt="ChargeLab ALFA small image">
+                            </div>
+                            <div class="product__slide">
+                                <img class='lazyOwl' data-src="/assets/img/products/energy6.jpg" alt="ChargeLab ALFA small image">
+                            </div>
+                            <div class="product__slide">
+                                <img class='lazyOwl' data-src="/assets/img/products/energy12.jpg" alt="ChargeLab ALFA small image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="product__info">
+                            <h1 class="product__title">ChargeLab ALFA</h1>
+                            <div class="js-show-more show-more">
+                                <span class="js-show-more-trigger">Цена</span>
+                                <div class="js-show-more-block">
+                                    <p>Узнать стоимость вы можете по телефону: <a href="tel:380442280960">38 (044) 228 09 60</a></p>
+                                </div>
+                            </div>
+                            <p class="product__tags">для ресторанов, баров, кафе, ночных клубов, салонов красоты, спа-салонов, офисов, фитнес-центров</p>
+                            <div class="flex-table">
+                                <div class="flex-table__cell flex-table__cell--title">Размер зарядной станции</div>
+                                <div class="flex-table__cell">317х240х180мм</div>
 
-			<nav class="header__nav" role="navigation">
-				<ul class="header__menu menu">
-					<li class="menu__item"><a class="header__link menu__link page-scroll" href="#describe">Что это такое</a></li>
-					<li class="menu__item"><a class="header__link menu__link page-scroll" href="#shop">Продукты</a></li>
-					<li class="menu__item"><a class="header__link menu__link page-scroll" href="#profit">Выгоды</a></li>
-					<li class="menu__item"><a class="header__link menu__link page-scroll" href="#employment">Как работает</a></li>
-					<li class="menu__item"><a class="header__link menu__link page-scroll" href="#faq">FAQ</a></li>
-					<li class="menu__item"><a class="header__link menu__link" href="/franchise.html">Франшиза</a></li>
-				</ul>
-			</nav>
+                                <div class="flex-table__cell flex-table__cell--title">Выходная мощность</div>
+                                <div class="flex-table__cell">2 х 5V/1.0 A х 12 устройств</div>
 
-			<div class="header__meta">
-				<div class="header__tel header__item">
-					<a href="tel:+380442280960" class="header__link">+38 (044) 228 09 60</a>
-				</div>
+                                <div class="flex-table__cell flex-table__cell--title">Объем заряда</div>
+                                <div class="flex-table__cell">5,000 mAh х 12 устройств</div>
 
-				<ul class="social">
-					<li class="social__item">
-						<a href="https://www.facebook.com/ChargeLab-380238082347180/" class="header__link" target="_blank">
-							<i class="ch-icon ch-icon-facebook-circled" aria-hidden="true"></i>
-						</a>
-					</li>
-				</ul>
-			</div>
+                                <div class="flex-table__cell flex-table__cell--fullrow">Зарядная станция на 12 переносных устройств для индивидуальной подзарядки</div>
 
-			<button class="burger header__burger">
-				<span></span>
-				<span></span>
-				<span></span>
-			</button>
-		</div>
-	</div>
-</header>
-<div class="mobile-nav js_mobile-nav">
-    <nav>
-        <ul class="mobile-nav__menu">
-        </ul>
-    </nav>
-    <button class="burger mobile-nav__burger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-</div>
+                                <div class="flex-table__cell flex-table__cell--fullrow">Одновременная подзарядка до 24 гаджетов</div>
 
-<main id="main" role="main">
-    111
-</main>
+                                <div class="flex-table__cell flex-table__cell--title">Зарядные кабели в защитной оплётке</div>
+                                <div class="flex-table__cell">Apple MFI, Micro USB</div>
 
-<footer id="footer" class="footer">
-  <div class="container">
-    <p class="footer__copyright">© 2017 ChargeLab</p>
-  </div>
-</footer>
+                                <div class="flex-table__cell flex-table__cell--title">Брендируемая поверхность под Ваш логотип</div>
+                                <div class="flex-table__cell">Портативное устройство – 80х30мм, зарядная станция – 315х315х240мм</div>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="assets/js/libs/jquery-1.11.2.min.js"><\/script>')</script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-<script src="assets/js/vendor.min.js"></script>
-<script src="assets/js/include.js"></script>
+                                <div class="flex-table__cell flex-table__cell--fullrow">Защита от избыточного заряда и короткого замыкания</div>
+
+                                <div class="flex-table__cell flex-table__cell--fullrow">Защита от воровства переносных устройств </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sc sc--row-pdf row-pdf">
+          <div class="container">
+            <p>Ознакомьтесь с презентацией наших продуктов</p>
+            <a href="#" class="btn">Смотреть</a>
+          </div>
+        </section>
+        <section id="contacts" class="sc sc--contacts contacts">
+          <div class="container">
+            <h2 class="sc__heading sc__heading--cprimary">Контакты</h2>
+            <div class="contacts__div">
+              <div>
+                <p>Киев, Звоните: Пн.-Сб. 9.00-20.00</p>
+                <p><a href="tel:380442280960">+38 (044) 228 09 60</a><br><a href="tel:380968775608">+38 (096) 877 56 08</a></p>
+                <p><a href="mailto:welcome@chargelab.com.ua">welcome@chargelab.com.ua</a></p>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="container">
+        <p class="footer__copyright">© 2017 ChargeLab</p>
+      </div>
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/libs/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="assets/js/libs/jquery.lazyload.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script src="assets/js/vendor.min.js"></script>
+    <script src="assets/js/include.js"></script>
 </body>
 </html>

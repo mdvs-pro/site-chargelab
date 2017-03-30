@@ -1,0 +1,39 @@
+.flex-table {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__cell {
+    width: 50%;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    overflow: hidden;
+    list-style: none;
+    padding: 1rem 3rem;
+
+    &--fullrow {
+      width: 100%;
+
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 0.6rem;
+        height: 0.6rem;
+        border-radius: 100%;
+        background: $dark_color;
+        vertical-align: middle;
+        margin-right: 1rem;
+      }
+    }
+    
+    &--title {
+      font-weight: 600;
+    }
+
+    &:not(&--fullrow):nth-child(odd) {
+      border-right: .1rem solid #ebeaea;
+    }
+  }  
+}

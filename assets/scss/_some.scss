@@ -264,3 +264,45 @@ ul {
 		}
 	}
 }
+
+
+.flex-table {
+	font-size: 1.6rem;
+	border: 1px solid #ebeaea;
+	padding: 2rem 0;
+	margin: 2rem 0;
+}
+
+.breadcrumbs {
+	font-size: 1.7rem;
+	padding-bottom: 2rem;
+}
+
+.row-pdf {
+	background: $light_color;
+	font-size: 3rem;
+	text-align: center;
+}
+
+.sc--row-pdf {
+	padding-bottom: 4rem;
+}
+
+.show-more {
+	font-size: 1.6rem;
+
+	& > span {
+		display: inline-block;
+		font-weight: 600;
+		color: $secondary_color;
+		cursor: pointer;
+		padding: .5rem 2rem;
+		border: .2rem solid $secondary_color;
+		text-transform: uppercase;
+		margin: 1rem 0;
+	}
+
+	& > div {
+		display: none;
+	}
+}

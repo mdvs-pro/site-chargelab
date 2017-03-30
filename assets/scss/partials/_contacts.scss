@@ -1,5 +1,8 @@
 .contacts {
-  background: $light_color;
+
+  .home & {
+    background: $light_color;    
+  }
 
   &__div {
     display: flex;

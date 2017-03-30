@@ -1,0 +1,18 @@
+.product {
+  
+  .sc--product {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  &__title {
+    font-size: 4rem;
+  }
+
+  &__tags {
+    font-size: 1.7rem;
+    border-top: 1px solid #ebeaea;
+    padding-top: 1rem;
+    margin-top: 1rem;
+  }
+}

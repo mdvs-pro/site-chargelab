@@ -12,6 +12,10 @@
 	appearance: none;
 	@include animation(box-shadow, background, color);
 
+	&--no-btn {
+		background: none;
+		border: none;
+	}
 
 	&:hover {
 		background: transparent;

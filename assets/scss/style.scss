@@ -29,6 +29,7 @@
 @import "_excerpt";			// post excerpts
 @import "_post";            // стили поста
 @import "_libs";            // стили библиотек/плагинов
+@import "plugins/_flex-table";
 
 @import "partials/_mobile-nav";
 @import "partials/_welcome";
@@ -42,6 +43,8 @@
 @import "partials/_gallery";
 @import "partials/_faq";
 @import "partials/_contacts";
+
+@import "partials/_product";
 
 @import "_adaptive";			// стили адаптивки
 

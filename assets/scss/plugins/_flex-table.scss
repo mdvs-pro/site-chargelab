@@ -13,6 +13,10 @@
     list-style: none;
     padding: 1rem 3rem;
 
+    @include media-breakpoint-down(xs) {
+      width: 100%;
+    } 
+
     &--fullrow {
       width: 100%;
 
@@ -30,6 +34,19 @@
     
     &--title {
       font-weight: 600;
+
+      @include media-breakpoint-down(xs) {
+        &:before {
+          content: '';
+          display: inline-block;
+          width: 0.6rem;
+          height: 0.6rem;
+          border-radius: 100%;
+          background: $dark_color;
+          vertical-align: middle;
+          margin-right: 1rem;
+        }
+      }
     }
 
     &:not(&--fullrow):nth-child(odd) {

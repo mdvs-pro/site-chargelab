@@ -16,6 +16,11 @@
 
 	// code
 
+	var siteOpt = {
+		leftIcon : '<div class="prev__block"><i class="ch-icon ch-icon-right-thin ch-icon-rotate-this-180" aria-hidden="true"></i></div>',
+		rightIcon : '<div class="next__block"><i class="ch-icon ch-icon-right-thin" aria-hidden="true"></i></div>'
+	}
+
 	var mobileNav = {
 		className: '.js_mobile-nav',
 		copyClassName: '.js_mobile-nav_copy',
@@ -84,12 +89,12 @@
 			if (!$('.slides').length) return;
 
 			$('.slides').owlCarousel({
-				navigation: false,
+				navigation: true,
 				pagination: false,
 				singleItem: true,
 				lazyLoad: true,
 				slideSpeed: 400,
-				navigationText: ['&lt;', '&gt;'],
+				navigationText: [siteOpt.leftIcon, siteOpt.rightIcon],
 				beforeInit: function () {
 					owlCarouselModal.insertSlides();
 				},
@@ -145,7 +150,8 @@
 			navigation: true,
 			pagination: true,
 			touchDrag: true,
-			slideSpeed: 400
+			slideSpeed: 400,
+			navigationText: [siteOpt.leftIcon, siteOpt.rightIcon]
 		});
 	}
 

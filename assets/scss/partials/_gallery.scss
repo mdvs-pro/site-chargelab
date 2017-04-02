@@ -69,7 +69,6 @@
 .owl-carousel-lightbox.open {
 		display: block;
 		position: fixed;
-		padding-bottom: 100px;
 		opacity: 1;
 }
 
@@ -77,20 +76,27 @@
 		color: $primary_color;
 		position: absolute;
 		top: 0;
-		right: 0;
+		right: 2rem;
 		text-align: right;
 }
 
 #close {
-		color: $primary_color;
+		color: $color_white;
 		text-decoration: none;
-		font-size: 40px;
-		width: 44px;
+		font-size: 6rem;
+		padding-left: 2rem;
+		padding-right: 2rem;
 		text-align: center;
 		display: inline-block;
 		cursor: pointer;
 		position: relative;
 		z-index: 2;
+		background: $primary_color;
+		transition: padding .3s;
+
+		&:hover {
+			padding-top: 1rem;
+		}
 }
 
 .bg-layer {
@@ -130,30 +136,76 @@
 		display: inline-block;
 }
 
-.owl-controls.clickable {
-	height: 100%;
+/* OWL Buttons */
+
+.owl-controls {
 	position: absolute;
+	height: 100%;
 	top: 0;
 	left: 0;
 	right: 0;
 	z-index: 1;
 
 	.owl-buttons {
-		position: absolute;
-    top: 50%;
-		transform: translateY(-50%);
+		display: table;
 		width: 100%;
+		height: 100%;
 	}
 
-	.owl-prev {
-		position: absolute;
-		left: 10px;
-		font-size: 40px;
+	.owl-prev, .owl-next {
+		display: table-cell;
+		float: none;
+		vertical-align: middle;
+		font-size: 5rem;
+		padding: 2rem;
+		transition: background .3s;
+
+		&:hover {
+			//color: $secondary_color;
+			background: rgba($primary_color, 0.31)
+		}
 	}
 
 	.owl-next {
-		position: absolute;
-		right: 10px;
-		font-size: 40px;
+		text-align: right;
 	}
+}
+
+/* OWL Pagination */
+
+.owl-pagination {
+		position: absolute;
+    bottom: 0;
+    width: 100%;
+		margin: 0 auto;
+    text-align: center;
+}
+
+.owl-page {
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	background: $primary_color;
+	margin: 0 .5rem;
+
+	&.active {
+		background: $secondary_color;
+	}
+}
+
+
+/* OWL Сentered */
+
+
+.owl-centered .owl-wrapper {
+  display: table !important;
+}
+.owl-centered .owl-item {
+  display: table-cell;
+  float: none;
+  vertical-align: middle;
+}
+.owl-centered .owl-item > div {
+  text-align: center;
 }

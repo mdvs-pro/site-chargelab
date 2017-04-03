@@ -57,4 +57,69 @@
     margin-right: 2rem;
     width: 40%;
   }
+
+  // franchise page
+  &--fr {
+    background: url('/assets/img/welcome-fr-bg.jpg') no-repeat center center;
+  }
+
+  &__top-text {
+    color: #000;
+    font-weight: 500;
+    font-size: 2rem;
+  }
+
+  &__bottom-text {
+    color: #000;
+    font-weight: 500;
+    font-size: 2rem;
+  }
+
+  &__cblock {
+    background: rgba(23,23,23,0.60);
+    height: 100%;
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 4rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include media-breakpoint-down(md) {
+      padding: 2rem;
+    } 
+  }
+
+  .ctext {
+    font-size: 4rem;
+    color: $color_white;
+
+    &__heading {
+      font-size: 5rem;
+      line-height: 1.4;
+
+      @include media-breakpoint-down(xs) {
+        font-size: 3.6rem;
+      } 
+    }
+
+    &__subheading {
+      font-size: 2.3rem;
+      text-transform: uppercase;
+      padding-top: 2rem;
+      letter-spacing: .2rem;
+
+      @include media-breakpoint-down(xs) {
+        font-size: 1.7rem;
+      } 
+    }
+      
+    &__block {
+      font-weight: 600;
+
+      & > span {
+        display: block;
+      }
+    }
+  }
 }

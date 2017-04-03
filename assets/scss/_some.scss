@@ -78,6 +78,13 @@ b,
 	width: 100%;
 }
 
+.container {
+
+	&--fullh {
+		height: 100%;
+	}
+}
+
 .wrap {
 	display: block;
 	max-width: 124rem;
@@ -107,6 +114,7 @@ ul {
 .sc {
 	padding-top: 4rem;
 	padding-bottom: 6rem;
+
 	&__overlay {
 		background: rgba(0, 0, 0, 0.7);
 		position: absolute;
@@ -116,6 +124,11 @@ ul {
 		right: 0;
 		z-index: 1;
 	}
+
+	&__overlay--light {
+		background: linear-gradient(to bottom, rgba(204,196,196,0.50), rgba(148,148,148,0.50))
+	}
+
 	&__overlay+div {
 		position: relative;
 		z-index: 2;
@@ -123,15 +136,27 @@ ul {
 	&__heading {
 		text-align: center;
 		padding: 2rem 0 6rem;
+
 		&--cprimary {
 			color: $primary_color;
 		}
+
+		&--csecondary {
+			color: $secondary_color;
+		}
+
 		&--pad-t {
 			padding-top: 6rem;
 		}
+
 		&--pad-b-low {
 			padding-bottom: 3rem;
 		}
+
+		&--h4 {
+			font-size: 2.6rem;
+		}
+
 	}
 	&__sub-heading {
 		text-align: center;
@@ -174,7 +199,15 @@ ul {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	&--4>&__item {
+
+	&__item {
+		font-weight: 600;
+		text-align: center;
+		padding: 2rem 0 2rem;
+		margin-top: 3rem;
+	}
+
+	&--4 > &__item {
 		flex: 0 0 25%;
 		@include media-breakpoint-down(md) {
 			flex: 0 0 50%;
@@ -183,7 +216,8 @@ ul {
 			flex: 0 0 100%;
 		}
 	}
-	&--3>&__item {
+
+	&--3 > &__item {
 		flex: 0 0 33.3%;
 		@include media-breakpoint-down(md) {
 			flex: 0 0 50%;
@@ -192,18 +226,23 @@ ul {
 			flex: 0 0 100%;
 		}
 	}
-	&--2>&__item {
+	&--2 > &__item {
 		flex: 0 0 50%;
 		@include media-breakpoint-down(sm) {
 			flex: 0 0 100%;
 		}
 	}
-	&__item {
-		font-weight: 600;
-		text-align: center;
-		padding: 2rem 0 2rem;
-		margin-top: 3rem;
+
+	&--dir-col {
+		flex-direction: column;
+		height: 100%;
 	}
+
+	&--dir-col &__item {
+		padding-top: 0.2rem;
+		margin-top: 0;
+	}
+
 	&--icons {
 		font-size: 2rem;
 		p {

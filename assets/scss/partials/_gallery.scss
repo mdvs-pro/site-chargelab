@@ -168,19 +168,34 @@
 	.owl-prev, .owl-next {
 		display: table-cell;
 		float: none;
-		vertical-align: middle;
+		
 		font-size: 5rem;
-		padding: 2rem;
 		transition: background .3s;
 
-		&:hover {
-			//color: $secondary_color;
-			background: rgba($primary_color, 0.31)
-		}
+		@include media-breakpoint-down(sm) {
+      vertical-align: bottom;
+    }
 	}
 
 	.owl-next {
 		text-align: right;
+	}
+
+	.owl-buttons__arrow {
+		display: inline-block;
+    background: $primary_color;
+    color: $color_white;
+    line-height: 0;
+    padding: 2rem;
+		transition: padding .3s;
+	}
+
+	.owl-prev:hover .prev__block {
+		padding-left: 4rem;
+	}
+	
+	.owl-next:hover .next__block {
+		padding-right: 4rem;
 	}
 }
 

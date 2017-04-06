@@ -17,8 +17,8 @@
 	// code
 
 	var siteOpt = {
-		leftIcon : '<div class="prev__block"><i class="ch-icon ch-icon-right-thin ch-icon-rotate-this-180" aria-hidden="true"></i></div>',
-		rightIcon : '<div class="next__block"><i class="ch-icon ch-icon-right-thin" aria-hidden="true"></i></div>'
+		leftIcon : '<div class="owl-buttons__arrow prev__block"><i class="ch-icon ch-icon-right-thin ch-icon-rotate-this-180" aria-hidden="true"></i></div>',
+		rightIcon : '<div class="owl-buttons__arrow next__block"><i class="ch-icon ch-icon-right-thin" aria-hidden="true"></i></div>'
 	}
 
 	var mobileNav = {

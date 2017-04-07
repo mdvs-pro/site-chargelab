@@ -1,0 +1,10 @@
+.profit {
+
+  .flex-list--2 > .flex-list__item {
+    // center item
+
+    @include media-breakpoint-up(md) {
+			flex: 0 0 40%;
+		}
+  }
+}

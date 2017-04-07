@@ -200,6 +200,17 @@ ul {
 	justify-content: space-between;
 	flex-wrap: wrap;
 
+	&--sa {
+		justify-content: space-around;
+	}
+
+	&--sa-i &__item {
+
+		@include media-breakpoint-up(md) {
+			justify-content: center;
+		}
+	}
+
 	&__item {
 		font-weight: 600;
 		text-align: center;

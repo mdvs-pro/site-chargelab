@@ -3,7 +3,9 @@
   display: flex;
   height: 100vh;
   min-height: 60rem;
-  background: url('/assets/img/welcome-bg.jpg') no-repeat center center;
+  background: url('assets/img/welcome-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   align-items: center;
   text-align: center;
@@ -60,7 +62,7 @@
 
   // franchise page
   &--fr {
-    background: url('/assets/img/welcome-fr-bg.jpg') no-repeat center center;
+    background-image: url('assets/img/welcome-fr-bg.jpg');
   }
 
   &__top-text {

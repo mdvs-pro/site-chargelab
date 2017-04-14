@@ -135,6 +135,10 @@
 				owlCarouselModal.toggleLightbox();
 			});
 
+			$(".next__block").click(function () {
+				owl.next();
+			});
+
 			$('.gallery__image').on('click', function (e) {
 				e.preventDefault();
 				owlCarouselModal.toggleLightbox();
@@ -152,6 +156,12 @@
 			touchDrag: true,
 			slideSpeed: 400,
 			navigationText: [siteOpt.leftIcon, siteOpt.rightIcon]
+		});
+
+		var owl = $(".product__slider").data('owlCarousel');
+
+		$(".next__block").click(function () {
+			owl.next();
 		});
 	}
 

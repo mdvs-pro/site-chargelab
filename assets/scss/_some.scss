@@ -19,7 +19,7 @@ body {
 	overflow: hidden;
 }
 
-.page #main {
+.page #main, .single #main {
 	@extend %after-heading-block;
 }
 
@@ -355,5 +355,12 @@ ul {
 	}
 	&>div {
 		display: none;
+	}
+}
+
+
+@include media-breakpoint-down(xs) {
+	.hide-xs {
+		display: none!important;
 	}
 }

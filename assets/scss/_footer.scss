@@ -1,9 +1,21 @@
 .footer {
   background: $primary_color;
   color: $color_white;
-  padding: 2rem 0;
+  padding: 0;
 
   p {
     margin-bottom: 0;
+  }
+
+  .row {
+    align-items: center;
+  }
+
+  &__top {
+    margin-left: auto;
+    background: $light_color;
+    padding: 1rem 2rem;
+    display: inline-block;
+    font-size: 3rem;
   }
 }

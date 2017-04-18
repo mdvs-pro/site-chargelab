@@ -70,6 +70,7 @@
 		getSlides: function () {
 			var img = $('.gallery__image');
 			$.each(img, function (k, v) {
+				$(v).attr('data-i', k);
 				owlCarouselModal.options.slides.push($(v).data('original'));
 			});
 		},
@@ -142,7 +143,7 @@
 			$('.gallery__image').on('click', function (e) {
 				e.preventDefault();
 				owlCarouselModal.toggleLightbox();
-				owl.jumpTo($(e.target).parent().index());
+				owl.jumpTo($(e.target).data('i'));
 			});
 		},
 	}

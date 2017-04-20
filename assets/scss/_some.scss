@@ -25,9 +25,9 @@ body {
 
 h2,
 .h2 {
-	font-weight: 600;
-	font-size: 4.5rem;
-	line-height: 1.2;
+	font-weight: 400;
+	font-size: 3.5rem;
+	line-height: 1.15;
 	color: $secondary_color;
 	@include media-breakpoint-down(sm) {
 		font-size: 3.3rem;
@@ -136,6 +136,15 @@ ul {
 	&__heading {
 		text-align: center;
 		padding: 2rem 0 6rem;
+
+		&:after {
+			content: '';
+			display: block;
+			background: url(assets/img/circles.svg) no-repeat 0 0 / contain;
+			width: 6rem;
+			height: 0.9rem;
+			margin: .7rem auto;
+		}
 
 		&--cprimary {
 			color: $primary_color;

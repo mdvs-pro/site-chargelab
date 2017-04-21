@@ -11,7 +11,42 @@
 
   &__link {
     color: $primary_color;
-  } 
+  }
+
+  &__cbtn {
+    display: flex;
+    font-size: 1.3rem;
+    background: $primary_color;
+    padding: 0.7rem 2rem 0.7rem 1rem;
+    color: $color_white;
+    align-items: center;
+    transition: color .3s;
+
+    @include media-breakpoint-down(sm) {
+			padding-right: 0;
+		}
+
+    &:hover {
+      color: $secondary_color;
+    }
+
+    .cbtn__div {
+
+      span {
+        display: block;
+
+        @include media-breakpoint-down(sm) {
+          display:none;
+        }
+      }
+    }
+
+    .ch-icon {
+      font-size: 3rem;
+      margin-right: 1rem;
+    }
+
+  }
 
   &__burger {
     display: none;
@@ -39,13 +74,10 @@
     margin-right: 2rem;
   }
 
-  @include media-breakpoint-down(xs) {
-    width: 100%;
-    order: 2;
+  @include media-breakpoint-down(sm) {
     justify-content: center;
     margin-right: 0;
     padding-top: 0rem;
-    border-top: 1px solid;
     margin-top: 1rem;
   }
 }
@@ -64,7 +96,7 @@
 .logo {
 	width: 20rem;
 
-  @include media-breakpoint-down(xs) {
+  @include media-breakpoint-down(sm) {
     width: 14rem;
   }
 
@@ -74,11 +106,12 @@
 }
 
 .menu {
-  margin-left: 5rem;
-  margin-right: 5rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
 
   &__item {
     padding-left: 0;
+    margin-right: 1rem;
   }
 }
 

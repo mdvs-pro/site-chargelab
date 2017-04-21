@@ -47,9 +47,6 @@
 
 %after-heading-block {
 	padding-top: 9rem; // header height
-	@include media-breakpoint-down(xs) {
-    padding-top: 14rem;
-  }
 }
 
 //----------------центрирование-----------------------

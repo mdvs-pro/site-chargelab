@@ -4,7 +4,7 @@
   align-items: stretch;
   padding: 0;
 
-	@include media-breakpoint-down(xs) {
+	@include media-breakpoint-down(sm) {
       padding-top: 4rem;
 	}
 

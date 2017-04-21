@@ -13,7 +13,7 @@
     list-style: none;
     padding: 1rem 3rem;
 
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       width: 100%;
     } 
 
@@ -35,7 +35,7 @@
     &--title {
       font-weight: 600;
 
-      @include media-breakpoint-down(xs) {
+      @include media-breakpoint-down(sm) {
         &:before {
           content: '';
           display: inline-block;

@@ -387,8 +387,11 @@ ul {
 
 	.col-on {
 
+		@include media-breakpoint-up(md) {
+			background-image: none!important;
+		}
+
 		@include media-breakpoint-down(sm) {
-			background-image: url('assets/img/advantages.jpg');
 			background-size: cover;
 			padding: 0;
 

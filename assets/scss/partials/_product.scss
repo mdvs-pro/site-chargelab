@@ -28,3 +28,24 @@
     text-align: left;
   }
 }
+
+
+@include media-breakpoint-down(sm) {
+
+  .product__col-img {
+    order: 1; 
+    width: 70%;
+    margin: auto;
+  }
+
+  .product__col-desc {
+    order: 0;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+
+  .product__col-img {
+    width: 80%;
+  }
+}

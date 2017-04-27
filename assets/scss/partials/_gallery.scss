@@ -169,10 +169,11 @@
 		display: table-cell;
 		float: none;
 		vertical-align: middle;
-		font-size: 5rem;
+		font-size: 3rem;
 		transition: background .3s;
 
 		@include media-breakpoint-down(sm) {
+			font-size: 2rem;
       vertical-align: bottom;
     }
 	}
@@ -188,6 +189,10 @@
     line-height: 0;
     padding: 2rem;
 		transition: padding .3s;
+
+		@include media-breakpoint-down(sm) {
+			padding: 1.5rem;
+    }
 	}
 
 	.owl-prev:hover .prev__block {
@@ -219,6 +224,11 @@
 
 	&.active {
 		background: $secondary_color;
+	}
+
+	@include media-breakpoint-down(sm) {
+		width: 1.4rem;
+		height: 1.4rem;
 	}
 }
 

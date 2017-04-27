@@ -1,5 +1,5 @@
 (function ($, window, document) {
-	// The $ is now locally scoped 
+	// The $ is now locally scoped
 	// Listen for the jQuery ready event on the document
 	$(function () {
 		// on ready
@@ -48,7 +48,10 @@
 
 	function scrollNav() {
 		//jQuery for page scrolling feature - requires jQuery Easing plugin
-		$('a.page-scroll').bind('click', function (event) {
+		$(document).on('click touchstart', 'a.page-scroll', function (event) {
+
+			$('.js_mobile-nav').removeClass('open');
+
 			var $anchor = $(this);
 			$('html, body').stop().animate({
 				scrollTop: $($anchor.attr('href')).offset().top
@@ -136,7 +139,7 @@
 				owlCarouselModal.toggleLightbox();
 			});
 
-			$(".next__block").click(function () {
+			$(".next__block").on('click touchstart',function () {
 				owl.next();
 			});
 
@@ -161,7 +164,7 @@
 
 		var owl = $(".product__slider").data('owlCarousel');
 
-		$(".next__block").click(function () {
+		$(".next__block").on('click touchstart',function () {
 			owl.next();
 		});
 	}
@@ -173,7 +176,7 @@
 		var showMoreBlockClass = showMoreClass + '-block';
 
 		if (!$showMore.length) return;
-		$showMore.find(showMoreTriggerClass).on('click', function(){	
+		$showMore.find(showMoreTriggerClass).on('click', function(){
 			$(this).parent().find(showMoreBlockClass).show();
 		});
 	}

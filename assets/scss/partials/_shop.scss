@@ -31,11 +31,14 @@
   }
 
   &__img {
-
-    height: 30rem;
+    position: relative;
+    overflow: hidden;
+    height: 20rem;
 
     img {
-      display: block;
+      position: absolute;
+      @extend %cam;
+
       width: auto;
       height: 100%;
       margin: 0 auto;

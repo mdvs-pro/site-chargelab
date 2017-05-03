@@ -24,15 +24,15 @@ gulp.task('html', function () {
 });
 
 gulp.task('js-vendor', function () {
-	return gulp.src('./assets/js/vendor/*.js')
+	return gulp.src('assets/js/vendor/*.js')
 		.pipe(concat('vendor.min.js'))
 		.pipe(jsmin())
-		.pipe(gulp.dest('./assets/js/'))
+		.pipe(gulp.dest('assets/js/'))
 		.pipe(browserSync.reload({stream:true}));
 });
 
 gulp.task('css', function () {
-	return gulp.src('./assets/scss/**/*.scss')
+	return gulp.src('assets/scss/**/*.scss')
 		.pipe(sourcemaps.init())
 		.pipe(sass().on('error', sass.logError))
 		.pipe(autoprefixer(autoprefixerOptions))
@@ -55,13 +55,13 @@ gulp.task('bs-reload', function () {
 });
 
 gulp.task('default', ['html', 'css', 'browser-sync'], function () {
-	gulp.watch("./assets/scss/**/*.scss", ['css']);
+	gulp.watch("assets/scss/**/*.scss", ['css']);
 	gulp.watch("./src/**/*.html", ['html']);
-	gulp.watch("./assets/js/*.js", ['bs-reload']);
+	gulp.watch("assets/js/*.js", ['bs-reload']);
 });
 
 gulp.task('release', function () {
-	return gulp.src('./assets/scss/**/*.scss')
+	return gulp.src('assets/scss/**/*.scss')
 		.pipe(sass({ outputStyle: 'compressed' }))
 		.pipe(autoprefixer(autoprefixerOptions))
 		.pipe(gulp.dest(output))
